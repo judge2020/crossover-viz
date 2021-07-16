@@ -30,7 +30,7 @@ def extract_data(filename):
             continue
         wanted_section = _wanted_section[0]
         _templates = list(filter(lambda x: x.name in TEMPLATE_NAMES, wanted_section.templates))
-        _type1_links = list(filter(lambda x: x.arguments[2].value == '1', _templates))
+        _links = list(filter(lambda x: x.arguments[2].value in ['1', '1a', '1b', '2'], _templates))
         toadd = {
             'title': serie['title'],
             'categories': [i.title.replace('Category:', '') for i in
@@ -38,7 +38,7 @@ def extract_data(filename):
             'links': [{
                 'with': i.arguments[0].value,
                 'how': i.arguments[7].value
-            } for i in _type1_links]
+            } for i in _links]
         }
 
         output.append(toadd)
