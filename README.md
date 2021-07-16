@@ -1,7 +1,7 @@
 
 ## crossover-viz
 
-Parses the [Crossover Wiki](https://fictionalcrossover.fandom.com/) to generate cool visualizations. This is mostly a weekend toy project and will likely not ever be fully-featured.
+Parses the [Crossover Wiki](https://fictionalcrossover.fandom.com/) to generate relationship graphs. This is mostly a weekend toy project and will likely not ever be fully-featured.
 
 To use:
 
