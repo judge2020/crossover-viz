@@ -16,4 +16,8 @@ To use:
 
 5. run `python main.py` (python 3)
 
-No output is currently generated because this is a work in progress.
+
+Current issues:
+
+- without constraints, graphs are generated nearly instantly, however these provide no use (all edges overlap each other)
+- with constraints, the dot program takes an extremely long time to generate the svg
